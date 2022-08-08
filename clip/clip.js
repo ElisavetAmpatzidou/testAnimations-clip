@@ -4,6 +4,7 @@ import css from "./clip.css";
 import initParams from "./initParams";
 import scene1 from "./scenes/scene-1";
 import scene2 from "./scenes/scene-2";
+import scene3 from "./scenes/scene-3";
 import initParamsValidationRules from "./initParamsValidationRules";
 
 export const clip = new HTMLClip({
@@ -21,3 +22,4 @@ export const clip = new HTMLClip({
 const duration = 1000;
 clip.addIncident(scene1, 0);
 clip.addIncident(scene2, duration+1200);
+clip.addIncident(scene3, duration+5000);
